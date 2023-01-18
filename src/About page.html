@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="../cssjs/header_footer_nav.css">
+    <link rel="stylesheet" href="../cssjs/aboutpage.css">
+    <script src="../cssjs/nav.js" defer></script>
     <title>About Page</title>
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="header-logo"><img src="images/logo.png" alt="Company logo" width="240px"></div>
+        
+            <div class="header-logo"><img src="images/logo.png" alt="Company logo"></div>
             <div class="header-text">
                 <h1>Danas Electrical Engineering</h1>
                 <p>Lighting the way efficiently</p>
             </div>
-        </div>
+        
     </header>
-    <nav>
-        <ul>
-            <li><a href="Products page.html">Products</a></li>
-            <li><a href="Team page.html">Team</a></li>
-            <li><a href="Career page.html">Career</a></li>
-            <li><a href="About page.html">About</a></li>
-            <li><a href="FAQ page.html">FAQ</a></li>
-            <li><a href="Contact page.html">Contact Us</a></li>
-            <li><a href="https://t.me/Danas_Electrical_Mitad_and_Stove" target="_blank"><img src="images/telegram.png" alt="telegram icon" title="Our Telegram Link" width="25px"></a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul>
+                <li><a id="active" href="Home page.html">Home</a></li>
+                <li><a href="Products page.html">Products</a></li>
+                <li><a href="Team page.html">Team</a></li>
+                <li><a href="Career page.html">Career</a></li>
+                <li><a href="About page.html">About</a></li>
+                <li><a href="FAQ page.html">FAQ</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>     
+            </ul>
+        </div>
+        
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="tg-link"><a href="https://t.me/Danas_Electrical_Mitad_and_Stove" target="_blank"><img src="images/telegram.png" alt="telegram icon" title="Our Telegram Link" width="25px"></a></div>
     </nav>
     <section>
         <h2>DANAS Electrical Engineering</h2>
@@ -42,7 +54,7 @@
             The energy efficient Electric Injera Mitad and Stoves are on sale at the 
             workshop of DANAS Electrical Engineering. 
         </p>
-        <p>Some of consultancy works carried out include: </p>
+        <p id="p1">Some of consultancy works carried out include: </p>
         <ol type="a">
             <li>Assessment for the Implementation of Solar Water Heaters (SWH) to Hotels, Hospitals and Other Commercial Buildings in Addis Ababa, completed in January 2022.</li> 
             <li>Efficiency Assessment and Minimum Efficiency Performance Standard (MEPS) setting for Induction motors in Ethiopian Market, completed in June 2021.</li>
@@ -59,32 +71,30 @@
             <li>Jimma Airport Terminal building Electrical design.</li>   
             <li>Electrical Installation of Sets General trading plc Aluminum and metal work shop and office.</li> 
         </ol>
-
-        <p>Here is a short video about the company below:</p>
-        <video id="video" width="60%" controls>
-            <source src="images/video.mp4" type="video/mp4" controls>
+        
+        <p id="p2">Here is a short video about the company below:</p>
+        <video id="video" controls>
+            <source src="images/mitad.mp4" type="video/mp4" controls>
         </video>
         <div class="free-space"></div>
     </section>
 
     <footer>
         <div class="footer-container">
-            <a href="Contact page.html"><h3 class="footer-box1">Contact Us/Site Map</h3></a>
-            <div>
+            <div class="sitemap"><a href="Contact page.html">Contact Us/Site Map</a></div>
+            <div class="pages">
                 - Home <br>
                 - About <br>
                 - FAQ <br>
                 - Contact Us <br>
             </div>
-        </div>
-        <div class="footer-container">
-            <img src="images/logo.png" alt="Company Logo" width="90px">
+            <img src="images/logo.png" alt="Company Logo">
             <p>Danas Electrical Engineering</p>
             <div class="footer-info">
                 <ul>
-                    <li>Phone Number: +251 912 825 976</li>
-                    <li>Email: <a href="mailto:danasrat@yahoo.com">danasrat@yahoo.com</a></li>
-                    <li>Postal Number: 238247</li>
+                    <li><u>Phone Number</u>: +251 912 825 976</li>
+                    <li><u>Email</u>: <a href="mailto:danasrat@yahoo.com">danasrat@yahoo.com</a></li>
+                    <li><u>Postal Number</u>: 238247</li>
                 </ul>
             </div>
         </div>

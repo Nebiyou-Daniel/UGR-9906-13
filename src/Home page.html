@@ -5,45 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="../cssjs/header_footer_nav.css">
+    <link rel="stylesheet" href="../cssjs/homepage.css">
+    <script src="../cssjs/homepage.js"></script>
+    <script src="../cssjs/nav.js" defer></script>
+
     <title>Home Page</title>
 </head>
 <body>
 
     <header>
-        <div class="header-container">
-            <div class="header-logo"><img src="images/logo.png" alt="Company logo" width="240px"></div>
-            <div class="header-text">
-                <h1>Danas Electrical Engineering</h1>
-                <p>Lighting the way efficiently</p>
-            </div>
+
+        <div class="header-logo"><img src="images/logo.png" alt="Company logo"></div>
+        <div class="header-text">
+            <h1>Danas Electrical Engineering</h1>
+            <p>Lighting the way efficiently</p>
         </div>
+    
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="Products page.html">Products</a></li>
-            <li><a href="Team page.html">Team</a></li>
-            <li><a href="Career page.html">Career</a></li>
-            <li><a href="About page.html">About</a></li>
-            <li><a href="FAQ page.html">FAQ</a></li>
-            <li><a href="Contact page.html">Contact Us</a></li>
-            <li><a href="https://t.me/Danas_Electrical_Mitad_and_Stove" target="_blank"><img src="images/telegram.png" alt="telegram icon" title="Our Telegram Link" width="25px"></a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <ul>
+                <li><a id="active" href="Home page.html">Home</a></li>
+                <li><a href="Products page.html">Products</a></li>
+                <li><a href="Team page.html">Team</a></li>
+                <li><a href="Career page.html">Career</a></li>
+                <li><a href="About page.html">About</a></li>
+                <li><a href="FAQ page.html">FAQ</a></li>
+                <li><a href="Contact page.html">Contact Us</a></li>     
+            </ul>
+        </div>
+        
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="tg-link"><a href="https://t.me/Danas_Electrical_Mitad_and_Stove" target="_blank"><img src="images/telegram.png" alt="telegram icon" title="Our Telegram Link" width="25px"></a></div>
     </nav>
 
     <section>
-        <div>
+        <div id="content1">
             <h2>Welcome to the official website of DANAS Electrical Engineering!</h2>
             <p>	DANAS Electrical Engineering, established in 2003, is engaged 
                 in electrical engineering consultancy services and manufacturing 
                 of energy efficient electric injera Mitad and electric stoves in Ethiopia...</p>
             <br>
-            <a href="About page.html" title="To About page"><button>Find Out More</button></a>
+            <a href="About page.html" title="To About page"><button class="morebutton">Find Out More</button></a>
         </div>
 
         <br><br>
         
-        <div>
+        <div id="content2">
             <div>
                 <img src="images/dani.jpg" alt="founder's photo" width="200px">
                 <h3>Daniel Asrat</h3>
@@ -54,7 +68,8 @@
                 </p>
                 <a href="Team Page.html" title="To Team Page">Find Out More</a>
             </div>
-            <div>
+            
+            <div id="audio">
                 <p>A short speech by the company's founder:</p>
                 <audio src="images/Voice.m4a" controls></audio>                     
             </div>
@@ -62,19 +77,18 @@
 
         <br><br>
 
-        <div>
+        <div id="content3">
             <div>
                 <h3>A few photos from our company</h3>
-                <p>Here are some photos taken from our company's workplace and events</p>
+                <p>Here are some photos taken from our company's workplace and events: </p>
             </div>
             <div> 
                 <div class="gallery">
-                    <img src="images/download.jfif" alt="images" width="60%">              
+                    <img src="images/company.jfif" alt="images" width="60%" id="home-images">              
                     <br>
-                    <button onclick="">Previous</button>
-                    <button onclick="">Next</button>
+                    <button class="previous" onclick="previous()">Previous</button>
+                    <button class="next" onclick="next()">Next</button>
                 </div>
-                <button onclick="">More Images</button>
             </div>
         </div>
         
@@ -83,22 +97,20 @@
 
     <footer>
         <div class="footer-container">
-            <a href="Contact page.html"><h3 class="footer-box1">Contact Us/Site Map</h3></a>
-            <div>
+            <div class="sitemap"><a href="Contact page.html">Contact Us/Site Map</a></div>
+            <div class="pages">
                 - Home <br>
                 - About <br>
                 - FAQ <br>
                 - Contact Us <br>
             </div>
-        </div>
-        <div class="footer-container">
-            <img src="images/logo.png" alt="Company Logo" width="90px">
+            <img src="images/logo.png" alt="Company Logo">
             <p>Danas Electrical Engineering</p>
             <div class="footer-info">
                 <ul>
-                    <li>Phone Number: +251 912 825 976</li>
-                    <li>Email: <a href="mailto:danasrat@yahoo.com">danasrat@yahoo.com</a></li>
-                    <li>Postal Number: 238247</li>
+                    <li><u>Phone Number</u>: +251 912 825 976</li>
+                    <li><u>Email</u>: <a href="mailto:danasrat@yahoo.com">danasrat@yahoo.com</a></li>
+                    <li><u>Postal Number</u>: 238247</li>
                 </ul>
             </div>
         </div>
