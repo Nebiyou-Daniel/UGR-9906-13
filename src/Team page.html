@@ -7,22 +7,22 @@
     <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="../cssjs/header_footer_nav.css">
     <link rel="stylesheet" href="../cssjs/teampage.css">
-    <script src="/cssjs/nav.js" defer></script>
+    <script src="../cssjs/nav.js" defer></script>
 
     <title>Team Page</title>
 </head>
 <body>
     <header>
-        
-            <div class="header-logo"><img src="images/logo.png" alt="Company logo"></div>
-            <div class="header-text">
-                <h1>Danas Electrical Engineering</h1>
-                <p>Lighting the way efficiently</p>
-            </div>
-        
+        <div class="header-logo"><img src="images/logo.png" alt="Company logo"></div>
+        <div class="header-text">
+            <h1>Danas Electrical Engineering</h1>
+            <p>Lighting the way efficiently</p>
+        </div>
+    
     </header>
+
     <nav class="navbar">
-        <div class="navbar-links">
+        <div id="navbar-links" class="navbar-links">
             <ul>
                 <li><a id="active" href="Home page.html">Home</a></li>
                 <li><a href="Products page.html">Products</a></li>
@@ -34,7 +34,7 @@
             </ul>
         </div>
         
-        <a href="#" class="toggle-button">
+        <a class="toggle-button" onclick="toggleNavLinks()">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>

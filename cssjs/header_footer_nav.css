@@ -233,6 +233,9 @@ footer{
     background-color: white;
     border-radius: 10px;
 }
+.active{
+    display: flex !important;
+}
 
 
 /*
@@ -377,8 +380,8 @@ footer{
         display: none;
         width: 100%;
     }
-    nav ul .activenav{
-        display: flex;
+    nav ul .active{
+        display: flex !important;
     }
     .tg-link{
         position: relative;
@@ -462,6 +465,7 @@ footer{
         font-size: 20px;
         padding-bottom: 10px;
     }
+    /*  */
     .toggle-button{
         display: flex;
     }
@@ -485,9 +489,7 @@ footer{
         display: none;
         width: 100%;
     }
-    nav ul .activenav{
-        display: flex;
-    }
+    /*  */
     .footer-container{
         height: 300px;
     }
