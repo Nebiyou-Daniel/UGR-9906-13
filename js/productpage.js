@@ -4,12 +4,12 @@ var model1 = [];
 var model2 = [];
 
 for (let index = 0; index < gallery1.length; index++ ){
-    let src = 'images/' + gallery1[index];
+    let src = '../images/' + gallery1[index];
     model1.push(src);
  
 }
 for (let index = 0; index < gallery2.length; index++ ){
-    let src = 'images/' + gallery2[index];
+    let src = '../images/' + gallery2[index];
     model2.push(src);
  
 }
